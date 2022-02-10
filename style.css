@@ -1,9 +1,26 @@
-* {
-    margin-top: 0px;
-    margin: auto;
-    box-sizing: border-box;
+body {
+    margin: 0px;
 }
-
 .header {
-    background-color: blue;
+    background-color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 1px 10px 0px grey;
+}
+    
+#logo {
+    margin-left: 10px;
+    width: 70px;
+}
+    
+.header h2 {
+    align-self: center;
+} 
+
+.divt {
+    width: 70px;
+    margin: 0px;
 }
