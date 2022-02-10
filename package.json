@@ -1,0 +1,23 @@
+{
+  "name": "projeto-b-geotrack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuanMigNak/Projeto-B-GeoTrack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuanMigNak/Projeto-B-GeoTrack/issues"
+  },
+  "homepage": "https://github.com/LuanMigNak/Projeto-B-GeoTrack#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
