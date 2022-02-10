@@ -1,12 +1,21 @@
-body {
+* {
+    margin-top: 0px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .header {
     background-color: blue;
     width: 100%;
     height: 80px;
+    margin-bottom: 30px;
+}
+
+.header h2 {
     margin: auto;
+    text-align: center;
+    position: relative;
+    top: 25px;
 }
 
 .section1 {
@@ -17,6 +26,13 @@ body {
 
 .section1 div {
     background-color: red;
-    width: 30%;
+    width: 20%;
     height: 400px;
+}
+
+.section2 {
+    background-color: green;
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
 }
