@@ -1,3 +1,1 @@
-// import { getIp } from "./getIp";
-
-// console.log(getIp);
+console.log(getIp);
