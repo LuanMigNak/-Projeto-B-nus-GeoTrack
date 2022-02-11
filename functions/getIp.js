@@ -32,17 +32,63 @@ function getIp(callback)
     }
 }
 
-getIp(function (ip) {
-  console.log(ip);
-  const url = `https://api.techniknews.net/ipgeo/${ip}`
+// getIp(function (ip) {
+//   console.log(ip);
+//   const url = `https://api.techniknews.net/ipgeo/${ip}`
+//   const mapaH = document.getElementById('mapImg')
   
-  const getLocation = async () => {
-    const element = await fetch(url)
-    const data = await element.json()
-    return data
-  }
+//   const getLocation = async () => {
+//     const element = await fetch(url)
+//     const data = await element.json()
+//     console.log(data);
+//     const cord = {
+//       lat: data.lat,
+//       lng: data.lon
+//     }
 
-  getLocation()
-});
+//     const initMap = () => {
+//       const options = {
+//         zoom: 10,
+//         center: cord
+//       }
 
-// AIzaSyCTl7iwusGTtQapPdHlfFlsBCql6BYst4ws
+//       const mapa = new google.maps.Map((mapaH), options)
+//     }
+
+//     initMap()
+//   }
+
+//   getLocation()
+// });
+
+// getIp(function (ip) {
+//   console.log(ip);
+//   const getLocation = async () => {
+//     const url = `https://api.techniknews.net/ipgeo/${ip}`
+//     const mapaH = document.getElementById('mapImg')
+//     const element = await fetch(url)
+//     const data = await element.json()
+//     return data
+//   }
+
+//   console.log(getLocation());
+// });
+
+//   const getLocation = async () => {
+//     const element = await fetch(url)
+//     const data = await element.json()
+//     console.log(data);
+//     const cord = {
+//       lat: data.lat,
+//       lng: data.lon
+//     }
+
+//     const initMap = () => {
+//       const options = {
+//         zoom: 10,
+//         center: cord
+//       }
+
+//       const mapa = new google.maps.Map((mapaH), options)
+//     }
+//   }
