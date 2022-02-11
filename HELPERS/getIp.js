@@ -45,4 +45,8 @@ getIp(function (ip) {
   getLocation()
 });
 
-// AIzaSyCTl7iwusGTtQapPdHlfFlsBCql6BYst4ws
+if (typeof module !== 'undefined') {
+    module.exports = {
+        getIp,
+    }
+};
