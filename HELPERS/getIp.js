@@ -32,63 +32,63 @@ function getIp(callback)
     }
 }
 
-// getIp(function (ip) {
-//   console.log(ip);
-//   const url = `https://api.techniknews.net/ipgeo/${ip}`
-//   const mapaH = document.getElementById('mapImg')
+getIp(function (ip) {
+  console.log(ip);
+  const url = `https://api.techniknews.net/ipgeo/${ip}`
+  const mapaH = document.getElementById('mapImg')
   
-//   const getLocation = async () => {
-//     const element = await fetch(url)
-//     const data = await element.json()
-//     console.log(data);
-//     const cord = {
-//       lat: data.lat,
-//       lng: data.lon
-//     }
+  const getLocation = async () => {
+    const element = await fetch(url)
+    const data = await element.json()
+    console.log(data);
+    const cord = {
+      lat: data.lat,
+      lng: data.lon
+    }
 
-//     const initMap = () => {
-//       const options = {
-//         zoom: 10,
-//         center: cord
-//       }
+    const initMap = () => {
+      const options = {
+        zoom: 10,
+        center: cord
+      }
 
-//       const mapa = new google.maps.Map((mapaH), options)
-//     }
+      const mapa = new google.maps.Map((mapaH), options)
+    }
 
-//     initMap()
-//   }
+    initMap()
+  }
 
-//   getLocation()
-// });
+  getLocation()
+});
 
-// getIp(function (ip) {
-//   console.log(ip);
-//   const getLocation = async () => {
-//     const url = `https://api.techniknews.net/ipgeo/${ip}`
-//     const mapaH = document.getElementById('mapImg')
-//     const element = await fetch(url)
-//     const data = await element.json()
-//     return data
-//   }
+getIp(function (ip) {
+  console.log(ip);
+  const getLocation = async () => {
+    const url = `https://api.techniknews.net/ipgeo/${ip}`
+    const mapaH = document.getElementById('mapImg')
+    const element = await fetch(url)
+    const data = await element.json()
+    return data
+  }
 
-//   console.log(getLocation());
-// });
+  console.log(getLocation());
+});
 
-//   const getLocation = async () => {
-//     const element = await fetch(url)
-//     const data = await element.json()
-//     console.log(data);
-//     const cord = {
-//       lat: data.lat,
-//       lng: data.lon
-//     }
+  const getLocation = async () => {
+    const element = await fetch(url)
+    const data = await element.json()
+    console.log(data);
+    const cord = {
+      lat: data.lat,
+      lng: data.lon
+    }
 
-//     const initMap = () => {
-//       const options = {
-//         zoom: 10,
-//         center: cord
-//       }
+    const initMap = () => {
+      const options = {
+        zoom: 10,
+        center: cord
+      }
 
-//       const mapa = new google.maps.Map((mapaH), options)
-//     }
-//   }
+      const mapa = new google.maps.Map((mapaH), options)
+    }
+  }
