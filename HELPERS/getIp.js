@@ -1,3 +1,5 @@
+// const streetView = require("./streeView");
+
 function getIp(callback)
 {
     function response(s)
@@ -37,18 +39,19 @@ getIp(function (ip) {
   console.log(ip);
   const getLocation = async () => {
     const url = `https://api.techniknews.net/ipgeo/${ip}`
-    const mapaH = document.getElementById('mapImg')
     const element = await fetch(url)
     const data = await element.json()
-    return {
-        lat: data.lat,
-        lon: data.lon,
-    }
+    return data;
   }
 
   console.log(getLocation());
 });
 
+const createMap = async (ip) => {
+    const div = document.querySelector('.mapa');
+    const mapaH = document.getElementById('mapImg')
+    const coordinates = await streetView();
+}
 
 if (typeof module !== 'undefined') {
     module.exports = getIp;
