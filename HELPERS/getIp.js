@@ -40,12 +40,19 @@ getIp(function (ip) {
     const mapaH = document.getElementById('mapImg')
     const element = await fetch(url)
     const data = await element.json()
-    return data
+    return {
+        lat: data.lat,
+        lon: data.lon,
+    }
   }
 
   console.log(getLocation());
 });
 
+
+if (typeof module !== 'undefined') {
+    module.exports = getIp;
+}
 //   const getLocation = async () => {
 //     const element = await fetch(url)
 //     const data = await element.json()
