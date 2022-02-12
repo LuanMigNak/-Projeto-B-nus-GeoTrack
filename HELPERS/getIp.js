@@ -36,22 +36,44 @@ function getIp(callback)
 
 
 getIp(function (ip) {
-  console.log(ip);
+//   console.log(ip);
   const getLocation = async () => {
     const url = `https://api.techniknews.net/ipgeo/${ip}`
     const element = await fetch(url)
     const data = await element.json()
-    return data;
+    const lati = data.lat
+    // console.log(data);
+    // console.log(lati);
+    return data
   }
 
   console.log(getLocation());
 });
+
+const getLocation = async (ip) => {
+    const url = `https://api.techniknews.net/ipgeo/${ip}`
+    const element = await fetch(url)
+    const data = await element.json()
+    const lati = data.lat
+    // console.log(data);
+    // console.log(lati);
+    return data
+}
+
+async function dados() {
+//    const dadosP =  await getLocation(function(ip){});
+//    console.log(dadosP);
+    console.log(getIp());
+}
+
+dados()
 
 const createMap = async (ip) => {
     const div = document.querySelector('.mapa');
     const mapaH = document.getElementById('mapImg')
     const coordinates = await streetView();
 }
+
 
 if (typeof module !== 'undefined') {
     module.exports = getIp;
