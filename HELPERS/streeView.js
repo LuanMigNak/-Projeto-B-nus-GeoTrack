@@ -1,11 +1,11 @@
-const streetView = async (lat, lon) => {
+const streetView = async (data) => {
   try {
     const url = await fetch(
-      `https://maps.googleapis.com/maps/api/streetview?${lat},${lon}`,
+      `https://maps.googleapis.com/maps/api/streetview?size=400x400&location=${data.lat},${data.lon}&fov=80&heading=70&pitch=0&key=AIzaSyCa5dtOhmoUUBj2WToFe9JKDZZEm8lWiUw`,
     );
-    const data = await url.json();
-    log(data);
-    return data;
+    const location = await url.json();
+    log(location);
+    return location;
   } catch (error) {
     return new Error ('nothing');
   }

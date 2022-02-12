@@ -47,14 +47,17 @@ getIp(function (ip) {
   console.log(getLocation());
 });
 
-const createMap = async (ip) => {
+const createMap = async () => {
     const div = document.querySelector('.mapa');
     const mapaH = document.getElementById('mapImg')
-    const coordinates = await streetView();
+    const coordinates = await streetView(getIp);
 }
 
 if (typeof module !== 'undefined') {
-    module.exports = getIp;
+    module.exports = {
+        getIp,
+        createMap,
+    }
 }
 //   const getLocation = async () => {
 //     const element = await fetch(url)
