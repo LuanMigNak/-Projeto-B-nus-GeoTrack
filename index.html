@@ -10,8 +10,8 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa5dtOhmoUUBj2WToFe9JKDZZEm8lWiUw&callback=initMap"></script>
     <script src="script.js"></script>
     <script src="./HELPERS/getIp.js"></script>
-    <script src="HELPERS/mapTrack.js"></script>
-    <script src="./HELPERS/streeView.js"></script>
+    <script src="./HELPERS/initMap.js"></script>
+    <script src="./HELPERS/streetView.js"></script>
 </head>
 <body>
 <header class="header">
@@ -49,13 +49,13 @@
         <button class="button">Search</button>
     </div>
     <div class="mapa">
-        <img class="mapImg" src="Imagens/logo.png" alt="Imagem do visualização maps." srcset="">
+        <div id="map"></div>
     </div>
 
 
     <div class="container2">
         <div class="flag">
-            <div id="map"></div>
+            <div id="flagSrc"></div>
         </div>
         <div class="info"></div>
     </div>

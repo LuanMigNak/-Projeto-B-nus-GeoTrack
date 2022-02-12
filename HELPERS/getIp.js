@@ -1,5 +1,3 @@
-// const streetView = require("./streeView");
-
 function getIp(callback)
 {
     function response(s)
@@ -76,7 +74,10 @@ const createMap = async (ip) => {
 
 
 if (typeof module !== 'undefined') {
-    module.exports = getIp;
+    module.exports = {
+        getIp,
+        createMap,
+    }
 }
 //   const getLocation = async () => {
 //     const element = await fetch(url)
