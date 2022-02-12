@@ -46,11 +46,7 @@ getIp(function (ip) {
   console.log(getLocation());
 });
 
-const createMap = async (coord) => {
-    const div = document.querySelector('.mapa');
-    const coordinates = await initMap(coord);
-    div.appendChild(coordinates);
-}
+const createMap = async (coord) => await initMap(coord)
 
 if (typeof module !== 'undefined') {
     module.exports = {
