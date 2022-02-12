@@ -1,5 +1,3 @@
-// const streetView = require("./streeView");
-
 function getIp(callback)
 {
     function response(s)
@@ -49,8 +47,8 @@ getIp(function (ip) {
 
 const createMap = async () => {
     const div = document.querySelector('.mapa');
-    const mapaH = document.getElementById('mapImg')
-    const coordinates = await streetView(getIp);
+    const coordinates = await initMap();
+    div.appendChild(coordinates);
 }
 
 if (typeof module !== 'undefined') {
