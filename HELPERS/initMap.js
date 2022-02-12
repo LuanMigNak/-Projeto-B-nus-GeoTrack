@@ -1,7 +1,15 @@
 async function initMap(coord) {
+  const locale = {
+    lat: coord.lat,
+    lng: coord.lon,
+  };
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: coord.lat, lng: coord.lon },
-    zoom: 8,
+    center: locale,
+    zoom: 25,
+  });
+  const marker = new google.maps.Marker({
+    position: locale,
+    map: map,
   });
 }
 
