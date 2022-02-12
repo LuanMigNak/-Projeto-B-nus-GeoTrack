@@ -39,15 +39,16 @@ getIp(function (ip) {
     const url = `https://api.techniknews.net/ipgeo/${ip}`
     const element = await fetch(url)
     const data = await element.json()
+    const locationMap = await createMap(data)
     return data;
   }
 
   console.log(getLocation());
 });
 
-const createMap = async () => {
+const createMap = async (coord) => {
     const div = document.querySelector('.mapa');
-    const coordinates = await initMap();
+    const coordinates = await initMap(coord);
     div.appendChild(coordinates);
 }
 
