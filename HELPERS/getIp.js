@@ -54,21 +54,3 @@ if (typeof module !== 'undefined') {
         createMap,
     }
 }
-//   const getLocation = async () => {
-//     const element = await fetch(url)
-//     const data = await element.json()
-//     console.log(data);
-//     const cord = {
-//       lat: data.lat,
-//       lng: data.lon
-//     }
-
-//     const initMap = () => {
-//       const options = {
-//         zoom: 10,
-//         center: cord
-//       }
-
-//       const mapa = new google.maps.Map((mapaH), options)
-//     }
-//   }

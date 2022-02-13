@@ -87,10 +87,10 @@ body {
     align-self: center;
     width: 1000px;
     height: 500px;
-    /* background-color: white; */
+    background-color: white;
     box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
-    /* margin-bottom: 20px;
-    border-radius: 4px; */
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .container2 {

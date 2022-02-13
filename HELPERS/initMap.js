@@ -5,7 +5,7 @@ async function initMap(coord) {
   };
   map = new google.maps.Map(document.getElementById("map"), {
     center: locale,
-    zoom: 25,
+    zoom: 16,
   });
   const marker = new google.maps.Marker({
     position: locale,
@@ -20,7 +20,6 @@ async function initMap(coord) {
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
-    // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -39,7 +38,6 @@ async function initMap(coord) {
         }
       );
     } else {
-      // Browser doesn't support Geolocation
       handleLocationError(false, infoWindow, map.getCenter());
     }
   });
