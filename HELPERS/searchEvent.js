@@ -3,7 +3,6 @@ const getIpData = async (ip) => {
   
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data);
   return data;
 };
 
@@ -25,6 +24,8 @@ window.onload = () => {
   const ipInput = document.querySelector('#IpInput')
 
   searchButton.addEventListener('click', () => {
+    let infoDiv = document.querySelector('.infoUser')
+    infoDiv.innerText = 'loading...'
     return infoIp(getIpData(ipInput.value));
   });
 
