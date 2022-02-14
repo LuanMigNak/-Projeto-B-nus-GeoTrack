@@ -1,6 +1,5 @@
 window.onload = () => {
   let searchButton = document.querySelector('.button');
-  
   const getIpData = async (ip) => {
     const url = `https://api.techniknews.net/ipgeo/${ip}`;
 
@@ -21,11 +20,16 @@ window.onload = () => {
     timezone: ${ipInfo.timezone}
     currency: ${ipInfo.currency}
     internet provider: ${ipInfo.org}`
-}
+  };
 
   searchButton.addEventListener('click', () => {
     let ipInput = document.querySelector('#IpInput')
     return infoIp(getIpData(ipInput.value));
   });
 
+  searchButton.addEventListener('click', async () => {
+    let ipInput = document.querySelector('#IpInput')
+    let result = await getIpData(ipInput.value)
+    return initMap(result);
+  });
 };
