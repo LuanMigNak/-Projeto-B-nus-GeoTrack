@@ -70,6 +70,7 @@ body {
 .button {
     width: 80px;
     height: 30px;
+    margin-top: 10px;
     margin-left: 20px;
     border: none;    
     background: #041BE8;
@@ -139,4 +140,209 @@ body {
 
 .footer div {
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 850px) {
+    #map {
+        width: 750px;
+        min-width: none;
+        height: 380px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #map {
+        width: 700px;
+        min-width: none;
+        height: 360px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #map {
+        width: 650px;
+        min-width: none;
+        height: 340px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #map {
+        width: 600px;
+        min-width: none;
+        height: 320px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #map {
+        width: 550px;
+        min-width: none;
+        height: 300px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #map {
+        width: 500px;
+        min-width: none;
+        height: 280px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #map {
+        width: 450px;
+        min-width: none;
+        height: 260px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #map {
+        width: 400px;
+        min-width: none;
+        height: 240px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #map {
+        width: 400px;
+        min-width: none;
+        height: 240px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #map {
+        width: 350px;
+        min-width: none;
+        height: 220px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #map {
+        width: 300px;
+        min-width: none;
+        height: 200px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #map {
+        width: 250px;
+        min-width: none;
+        height: 180px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+    .div-ip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 290px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px 0px rgb(75, 66, 66);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #map {
+        width: 220px;
+        min-width: none;
+        height: 140px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+    .div-ip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 240px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px 0px rgb(75, 66, 66);
+    }
+}
+
+@media screen and (max-width: 250px) {
+    #map {
+        width: 200px;
+        min-width: none;
+        height: 120px;
+        min-height: none;
+        background-color: white;
+        box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
 }
