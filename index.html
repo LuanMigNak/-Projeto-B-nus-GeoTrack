@@ -20,19 +20,19 @@
 <body>
 <header class="header">
     <img id="logo" src="Imagens/logo.png" alt="Logo da página">
-    <h2>Geo Track</h2>
+    <h1>Geo Track</h1>
     <div class="divt"></div>
 </header>
 <section class="section1"> 
     <div>
-        <h2>titulo</h2>
+        <h2 class="text-muted">titulo</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Tempore ad blanditiis labore expedita placeat suscipit, 
             excepturi laboriosam vel magnam perspiciatis deleniti ratione asperiores 
             natus obcaecati eum nam aliquid praesentium aut.</p>
     </div>
     <div>
-        <h2>titulo</h2>
+        <h2 class="text-muted">titulo</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             Exercitationem animi ex sint provident totam facilis ipsum laudantium 
             harum corporis accusantium quas nisi a, quisquam nemo eaque dolor, 
@@ -40,7 +40,7 @@
         </p>
     </div>
     <div>
-        <h2>titulo</h2>
+        <h2 class="text-muted">titulo</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             Fuga voluptates doloremque illum velit, quisquam corrupti dolor 
             esse consequatur fugiat sequi! Quis tempore temporibus voluptates 
@@ -49,8 +49,10 @@
 </section>
 <section class="section2">
     <div class="container1">
-        <div class="div-ip">IP</div>
-        <button class="button">Search</button>
+        <div class="div-ip">
+            <input type="text" placeholder="Digite aqui seu IP" id="">
+            <input class="button" type="button" value="Search">
+        </div>
     </div>
     <div class="mapa">
         <div id="map"></div>
@@ -69,8 +71,9 @@
 </section>
 <hr>
 <footer class="footer">
-   <div class>Designed and built with all the love in the world by the Geo Track with the help of our contributors. </div>
-   <div>© Geo Track - All rights reserved.</div>
+   <div class="f1">Designed and built with all the love in the world 
+    by the Geo Track with the help of our contributors. </div>
+   <div class="f2">© Geo Track - All rights reserved.</div>
 </footer >
 </body>
 </html>
