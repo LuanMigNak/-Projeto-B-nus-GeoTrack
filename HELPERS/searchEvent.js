@@ -48,3 +48,10 @@ window.onload = () => {
     return initMap(result);
   });
 };
+
+if (typeof module !== 'undefined') {
+  module.exports = {
+      getIpData,
+      infoIp,
+  }
+}
