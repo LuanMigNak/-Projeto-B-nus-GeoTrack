@@ -116,11 +116,18 @@ body {
     text-align: center;
 }
 
+.mapa {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnSave {
+    max-width: 10px;
+}
+
 .flag {
-    width: 100px;
-    height: 70px;
-    max-width: 100px;
-    max-height: 70px;
+    width: 500px;
+    height: 240px;
     background-color: white;
     margin-right: 10px;
     box-shadow: 0 1px 2px 0px rgb(121, 114, 114);
