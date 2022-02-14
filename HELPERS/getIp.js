@@ -39,7 +39,21 @@ getIp(function (ip) {
     const url = `https://api.techniknews.net/ipgeo/${ip}`
     const element = await fetch(url)
     const data = await element.json()
+    console.log(data);
+    const infoIp = () => {
+        const infoDiv = document.getElementsByClassName('infoUser')
+        infoDiv[0].innerText = `ip: ${data.ip}
+        continent: ${data.continent}
+        country: ${data.country}(${data.countryCode})
+        regionName: ${data.regionName}
+        city: ${data.city}
+        timezone: ${data.timezone}
+        currency: ${data.currency}
+        internet provider: ${data.org}`
+    }
     const locationMap = await createMap(data)
+
+    infoIp()
     return data;
   }
 
