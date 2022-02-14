@@ -52,24 +52,6 @@ getIp(function (ip) {
         internet provider: ${data.org}`
     }
 
-    // const infoSave = () => {
-    //     const resp = document.getElementsByClassName('input-text');
-    //     const btnSave = document.getElementById('btnSave');
-    //     btnSave.addEventListener('click', () => {
-    //         console.log('aligato');
-    //         const infoDivSave = document.getElementsByClassName('InfoSave');
-    //         infoDivSave[0].innerText = `ip: ${data.ip}
-    //         continent: ${data.continent}
-    //         country: ${data.country}(${data.countryCode})
-    //         regionName: ${data.regionName}
-    //         city: ${data.city}
-    //         timezone: ${data.timezone}
-    //         currency: ${data.currency}
-    //         internet provider: ${data.org}`
-    //     })
-    // }
-
-    // infoSave()
     const locationMap = await createMap(data)
 
     infoIp()
