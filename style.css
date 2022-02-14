@@ -96,7 +96,9 @@ body {
 
 #map {
     width: 800px;
+    min-width: none;
     height: 400px;
+    min-height: none;
     background-color: white;
     box-shadow: 0 2px 2px 0px rgb(218, 208, 208);
     margin-bottom: 20px;
