@@ -20,15 +20,29 @@ const infoIp = async (data) => {
   internet provider: ${ipInfo.org}`
 };
 window.onload = () => {
-  let searchButton = document.querySelector('.button');
+  const searchButton = document.querySelector('.button');
+  const btnSave = document.getElementById('btnSave')
+  const ipInput = document.querySelector('#IpInput')
 
   searchButton.addEventListener('click', () => {
-    let ipInput = document.querySelector('#IpInput')
     return infoIp(getIpData(ipInput.value));
   });
 
-  searchButton.addEventListener('click', async () => {
+  btnSave.addEventListener('click', async () => {
     let ipInput = document.querySelector('#IpInput')
+    const a = await getIpData(ipInput.value)
+    const infoDivSave = document.getElementsByClassName('InfoSave');
+            infoDivSave[0].innerText = `ip: ${a.ip}
+            continent: ${a.continent}
+            country: ${a.country}(${a.countryCode})
+            regionName: ${a.regionName}
+            city: ${a.city}
+            timezone: ${a.timezone}
+            currency: ${a.currency}
+            internet provider: ${a.org}`
+  });
+
+  searchButton.addEventListener('click', async () => {
     let result = await getIpData(ipInput.value)
     return initMap(result);
   });
