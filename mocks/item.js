@@ -1,23 +1,23 @@
 const item = {
   "status": "success",
-  "continent": "South America",
-  "country": "Brazil",
-  "countryCode": "BR",
-  "regionName": "Sao Paulo",
-  "city": "São Paulo",
-  "zip": "01000",
-  "lat": -23.6283,
-  "lon": -46.6409,
-  "timezone": "America/Sao_Paulo",
-  "currency": "BRL",
-  "isp": "Vivo",
-  "org": "TELEF�NICA BRASIL S.A",
-  "as": "AS27699 TELEFÔNICA BRASIL S.A",
-  "reverse": "152-249-94-203.user.vivozap.com.br",
+  "continent": "Europe",
+  "country": "Portugal",
+  "countryCode": "PT",
+  "regionName": "Lisbon",
+  "city": "Benfica",
+  "zip": "2700-217",
+  "lat": 38.7509,
+  "lon": -9.20282,
+  "timezone": "Europe/Lisbon",
+  "currency": "EUR",
+  "isp": "NOS COMUNICACOES S.A",
+  "org": "NOS Comunicacoes S.A.",
+  "as": "AS2860 NOS COMUNICACOES, S.A.",
+  "reverse": "a94-133-184-120.cpe.netcabo.pt",
   "mobile": false,
   "proxy": false,
   "hosting": false,
-  "ip": "152.249.94.203"
+  "ip": "94.133.184.120"
 }
 
 module.exports = item;
