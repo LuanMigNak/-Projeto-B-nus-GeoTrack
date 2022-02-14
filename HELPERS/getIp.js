@@ -1,4 +1,4 @@
-function getIp(callback)
+async function getIp(callback)
 {
     function response(s)
     {

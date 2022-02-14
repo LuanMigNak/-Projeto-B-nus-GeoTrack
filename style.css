@@ -143,6 +143,7 @@ body {
 }
 
 .footer {
+    color: rgb(151, 140, 140);
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
