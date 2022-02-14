@@ -126,7 +126,7 @@ body {
 }
 
 .saved-info {
-    width: 500px;
+    width: 396px;
     height: auto;
     max-height: auto;
     background-color: white;
@@ -135,11 +135,10 @@ body {
 }
 
 .info {
-    width: 500px;
+    width: 400px;
     height: auto;
     background-color: white;
     margin-left: 10px;
-    border-radius: 4px;
     box-shadow: 0 1px 2px 0px rgb(121, 114, 114);
 }
 
